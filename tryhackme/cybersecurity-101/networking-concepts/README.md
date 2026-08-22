@@ -41,5 +41,5 @@ Also spent time on the private IP ranges from RFC 1918, since recognizing a `192
 - Manually talking to a service with Telnet (rather than just using a browser or a purpose built client) is a good habit, it strips away abstraction and shows what's actually being sent over the wire.
 
 ## Images
-
-[<img src="https://cdn-images.tryhackme.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/5f04259cf9bf5b57aed2c476-1719848845717.svg" />)
+### OSI-Model
+<img src="https://cdn-images.tryhackme.com/user-uploads/5f04259cf9bf5b57aed2c476/room-content/5f04259cf9bf5b57aed2c476-1719848845717.svg" />
