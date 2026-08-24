@@ -30,6 +30,15 @@ It closes with VPNs (Virtual Private Networks), which create an encrypted tunnel
 - FTPS: FTP secured with TLS, port 990
 - VPN: encrypted tunnel for remote network access, hides IP, protects traffic from inspection
 
+## Room Lab
+The practical part of this room used Wireshark to look at a capture of encrypted HTTPS traffic. On its own, TLS traffic just shows up as encrypted noise, so the first step was loading a TLS key into Wireshark (under Preferences, Protocols, TLS, pointing it to the (Pre)-Master-Secret log filename) so it could decrypt the traffic and show the actual HTTP requests underneath, instead of just encrypted packets.
+
+Once the traffic was readable, the next step was filtering down to find a specific HTTP POST request related to a login action, since POST requests are how form data (like a username and password) typically gets sent to a server, as opposed to GET requests, which just retrieve data.
+
+After finding the right POST request in the packet list, the flag was inside the packet details at the bottom of Wireshark, expanding the HTTP layer of that packet to see the actual form data submitted in the request body, which is where the login credentials (and the flag) were visible in plaintext, now that the TLS decryption key made that possible.
+
+<img width="1275" height="732" alt="image" src="https://github.com/user-attachments/assets/a850e38a-b45f-471a-a2d5-88139c600a9c" />
+
 ## Notes
 This room felt like it closed the loop that Networking Core Protocols opened, every plaintext protocol covered there (HTTP, FTP, SMTP, POP3, IMAP) got its secure counterpart explained here, which made the whole four part networking series feel like it actually finished somewhere instead of just accumulating more protocol names.
 
