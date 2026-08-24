@@ -14,16 +14,16 @@ The room closes with email protocols. SMTP (Simple Mail Transfer Protocol), used
 
 ## Key Concepts / Commands Learned
 - DNS: maps domain names to IP addresses, UDP port 53
-- DNS record types: A, AAAA, CNAME, MX
+  - DNS record types: A, AAAA, CNAME, MX
 - WHOIS: looks up domain registration and ownership details
 - HTTP / HTTPS: web protocols, TCP ports 80 and 443
-- HTTP methods: GET, POST, PUT, DELETE
+  - HTTP methods: GET, POST, PUT, DELETE
 - FTP: file transfer protocol, TCP port 21
-- FTP commands: USER, PASS, RETR, STOR
+  - FTP commands: USER, PASS, RETR, STOR
 - SMTP: mail sending protocol, TCP port 25
-- SMTP commands: HELO/EHLO, MAIL FROM, RCPT TO, DATA
+  - SMTP commands: HELO/EHLO, MAIL FROM, RCPT TO, DATA
 - POP3: mail retrieval protocol, TCP port 110
-- POP3 commands: USER, LIST, RETR, DELE
+  - POP3 commands: USER, LIST, RETR, DELE
 - IMAP: mail retrieval and sync protocol, TCP port 143
 
 ## Notes
